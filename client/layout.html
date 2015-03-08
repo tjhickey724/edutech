@@ -1,0 +1,19 @@
+<template name="layout">
+	<div class="container">
+		
+		<h2 class="text-center"><a href="/">Brandeis Educational Technology Research Group</a></h2>
+		
+			<nav class="navbar navbar-default">
+			<ul class="nav nav-tabs">
+			  <li role="presentation" class="active"><a href="/">Home</a></li>
+			  <li role="presentation"><a href="{{pathFor 'about'}}">About</a></li>
+			   <li role="presentation"><a href="{{pathFor 'projects'}}">Projects</a></li>
+
+			</ul>
+		</nav>
+		
+		<div id="main">
+			{{> yield}}
+		</div>
+	</div>
+</template>
